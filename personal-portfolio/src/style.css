@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', serif;
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #45567d;
+}
+
+.nav-list {
+  margin-right: 2rem;
+  display: flex;
+}
+
+.nav-list a {
+  display: block;
+  padding: 1rem;
+}
+
+.nav-list a:hover {
+  background: #be3144;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    justify-content: center;
+  }
+  
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  height: 100vh;
+}
+
+.projects-section {
+  background-color: #be3144;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn {
+  background-color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100px;
+}
+
+.btn:hover {
+  background: #45567d;
+  transform: scale(1.05)
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  height: 80vh;
+}
+
+.contact-details{
+  padding: 15px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 1px #be3144;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+.contact-section-header {
+  margin: 30px auto 30px auto;
+}
+
+footer {
+  border-top: 3px solid #45567d;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+}
+
+a {
+  text-decoration:  none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.projects-section h2 {
+  text-decoration: underline;
+}
+
+p {
+  font-style: italic;
+  color: #be3144;
+  text-align: center;
+}
+
+.project-grid p {
+  color: white;
+  font-style: normal;
+  background: black;
+  height: 30px;
+  margin-top: 0;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+
+.project-grid p:hover {
+  background: #45567d;
+}
+
+.contact-links {
+  flex-wrap: wrap;
+}

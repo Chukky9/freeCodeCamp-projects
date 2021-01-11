@@ -1,0 +1,123 @@
+@import
+  url(https://fonts.googleapis.com/css?family=Farsan&display=swap);
+
+html {
+  font-family: 'Farsan', serif;
+  line-height: 1.5;
+  background-color: #ffffca;
+  font-size: 25px
+}
+
+#navbar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-right: 2px solid black;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  list-style: none;
+  border-top: 1px solid black;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #595753;
+  display: block;
+  padding: 10px 20px;
+}
+
+header {
+  font-size: 40px;
+  text-align: center;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 320px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin-top: 5px;
+}
+
+p, li {
+  color: #595753
+}
+
+code {
+  color: #595753;
+  display: block;
+  font-size: 15px;
+  padding: 10px 30px;
+  background-color: #ffff73;
+  width: 700px;
+  margin-left: 50px;
+  border-radius: 5px;
+  position: relative;
+  line-height: 2;
+}
+
+section, article {
+  font-size: 0.9rem;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: #ffffca;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
